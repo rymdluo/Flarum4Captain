@@ -97,8 +97,45 @@ touch /data/extensions/list
 
 # Auto-add extensions
 echo $'\n\
+andre-pullinen/ads\n\
+migratetoflarum/fake-data\n\
+fof/default-group\n\
+fof/recaptcha\n\
+AlexanderOMara/flarum-gravatar\n\
+fof/socialprofile\n\
+fof/share-social\n\
+fof/nightmode\n\
+therealsujitk/flarum-ext-gifs\n\
+zerosonesfun/elint\n\
+fof/pretty-mail\n\
+fof/realtimelogin\n\
+fof/realtimedate\n\
+nearata/flarum-ext-tags-color-generator\n\
+therealsujitk/flarum-ext-hljs\n\
+fof/drafts\n\
+fof/gamification\n\
+askvortsov/flarum-discussion-templates\n\
+fof/split\n\
+fof/merge-discussions\n\
+fof/formatting\n\
+fof/best-answer\n\
+flarumite/simple-discussion-views\n\
+fof/impersonate\n\
+fof/masquerade\n\
+fof/disposable-emails\n\
+fof/stopforumspam\n\
+fof/filter\n\
+fof/html-errors\n\
 fof/links\n\
-fof/frontpage' > /data/extensions/list
+fof/frontpage\n\
+dem13n/discussion-cards\n\
+fof/custom-footer\n\
+fof/terms\n\
+fof/analytics\n\
+fof/byobu\n\
+v17development/flarum-blog\n\
+v17development/flarum-seo\n\
+blomstra/payments'> /data/extension s/list
 
 cp -Rf /opt/flarum/public/assets /data
 cp -Rf /opt/flarum/storage /data
