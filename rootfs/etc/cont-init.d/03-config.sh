@@ -94,6 +94,10 @@ fi
 echo "Initializing files and folders..."
 mkdir -p /data/assets /data/extensions/.cache /data/storage
 touch /data/extensions/list
+
+# Auto-add extensions
+echo $'fof/links\nfof/frontpage' > /data/extensions/list
+
 cp -Rf /opt/flarum/public/assets /data
 cp -Rf /opt/flarum/storage /data
 rm -rf /opt/flarum/extensions /opt/flarum/public/assets /opt/flarum/storage
