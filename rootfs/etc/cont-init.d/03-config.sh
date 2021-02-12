@@ -96,7 +96,9 @@ mkdir -p /data/assets /data/extensions/.cache /data/storage
 touch /data/extensions/list
 
 # Auto-add extensions
-echo $'fof/links\nfof/frontpage' > /data/extensions/list
+echo $'\n\
+fof/links\n\
+fof/frontpage' > /data/extensions/list
 
 cp -Rf /opt/flarum/public/assets /data
 cp -Rf /opt/flarum/storage /data
