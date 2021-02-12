@@ -129,6 +129,7 @@ fof/html-errors\n\
 fof/links\n\
 fof/frontpage\n\
 dem13n/discussion-cards\n\
+fof/pages\n\
 fof/custom-footer\n\
 fof/terms\n\
 fof/analytics\n\
