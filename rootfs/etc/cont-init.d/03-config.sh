@@ -136,7 +136,7 @@ fof/analytics\n\
 fof/byobu\n\
 v17development/flarum-blog\n\
 v17development/flarum-seo\n\
-blomstra/payments:*beta'> /data/extensions/list
+blomstra/payments'> /data/extensions/list
 
 cp -Rf /opt/flarum/public/assets /data
 cp -Rf /opt/flarum/storage /data
