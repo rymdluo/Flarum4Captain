@@ -244,6 +244,7 @@ if [ -s "/data/extensions/list" ]; then
     RUN composer config repositories.blomstra composer https://extiverse.com/composer/
     RUN composer config --global --auth bearer.extiverse.com ${$EXTIVERSE_TOKEN}
     RUN composer require blomstra/payments:*@beta
+  fi
 fi
 
 
