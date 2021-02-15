@@ -128,6 +128,7 @@ fof/filter\n\
 fof/html-errors\n\
 fof/links\n\
 fof/frontpage\n\
+askvortsov/flarum-categories\n\
 dem13n/discussion-cards\n\
 fof/pages\n\
 fof/custom-footer\n\
