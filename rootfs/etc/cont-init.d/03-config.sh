@@ -136,7 +136,7 @@ fof/analytics\n\
 fof/byobu\n\
 v17development/flarum-blog\n\
 v17development/flarum-seo\n\
-blomstra/payments'> /data/extensions/list
+blomstra/payments:*beta'> /data/extensions/list
 
 cp -Rf /opt/flarum/public/assets /data
 cp -Rf /opt/flarum/storage /data
@@ -240,8 +240,8 @@ if [ -s "/data/extensions/list" ]; then
     extensions="${extensions}${extension} "
   done < /data/extensions/list
   echo "Installing additional extensions..."
-  COMPOSER_CACHE_DIR="/data/extensions/.cache" su-exec flarum:flarum config repositories.blomstra composer https://extiverse.com/composer/
-  COMPOSER_CACHE_DIR="/data/extensions/.cache" su-exec flarum:flarum config --global --auth bearer.extiverse.com ${EXTIVERSE_TOKEN}
+  COMPOSER_CACHE_DIR="/data/extensions/.cache" su-exec flarum:flarum composer config repositories.blomstra composer https://extiverse.com/composer/
+  COMPOSER_CACHE_DIR="/data/extensions/.cache" su-exec flarum:flarum composer config --global --auth bearer.extiverse.com ${EXTIVERSE_TOKEN}
   COMPOSER_CACHE_DIR="/data/extensions/.cache" su-exec flarum:flarum composer require --working-dir /opt/flarum ${extensions}
 fi
 
