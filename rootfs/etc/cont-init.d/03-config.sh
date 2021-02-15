@@ -242,7 +242,7 @@ if [ -s "/data/extensions/list" ]; then
   COMPOSER_CACHE_DIR="/data/extensions/.cache" su-exec flarum:flarum composer require --working-dir /opt/flarum ${extensions}
   echo "Installing premium extensions..."
   echo "composer config repositories.blomstra composer https://extiverse.com/composer/"
-  echo "composer config --global --auth bearer.extiverse.com ${$EXTIVERSE_TOKEN}"
+  echo "composer config --global --auth bearer.extiverse.com ${EXTIVERSE_TOKEN}"
   echo "composer require blomstra/payments:*@beta"
 fi
 
